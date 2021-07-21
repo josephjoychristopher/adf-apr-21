@@ -1,0 +1,9 @@
+{
+	"name": "JosephDatafactory",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a535fae8-760e-40cd-aee6-37e197eda955",
+		"tenantId": "fc9182f0-e5d4-46ee-99f5-da9e2a40bbec"
+	}
+}
