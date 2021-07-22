@@ -1,17 +1,17 @@
 {
-	"name": "inputCSV",
+	"name": "input",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lsStorage",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
+				"type": "AzureBlobFSLocation",
 				"fileName": "cars.csv",
-				"container": "input"
+				"fileSystem": "input"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
@@ -20,27 +20,21 @@
 		},
 		"schema": [
 			{
-				"name": "Make",
 				"type": "String"
 			},
 			{
-				"name": "Model",
 				"type": "String"
 			},
 			{
-				"name": "Type",
 				"type": "String"
 			},
 			{
-				"name": "Origin",
 				"type": "String"
 			},
 			{
-				"name": "DriveTrain",
 				"type": "String"
 			},
 			{
-				"name": "Length",
 				"type": "String"
 			}
 		]
